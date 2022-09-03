@@ -1,0 +1,134 @@
+@import "./../../variables.scss";
+
+.body{
+    padding-top: 37px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    @include size(md){
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    &__mapinfo{
+        
+        width: 305px;
+        @include size(md){
+            padding: 10px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #DEE2E6;
+            width: auto;
+            margin: 0;
+        }
+        &__header{
+            font: normal normal bold 16px/19px Montserrat;
+            letter-spacing: 0px;
+            color: #343A46;
+            padding-bottom: 12px;
+        }
+        &__address{
+            font: normal normal medium 14px/20px Montserrat;
+            letter-spacing: 0px;
+            color: #868E96;
+            padding-bottom: 16px;
+        }
+        &__map{
+            padding-bottom: 16px;
+            img{
+                object-fit: cover;
+                width: 305px;
+                height: 190px;
+            }
+        }
+        &__showonmap{
+            margin-bottom: 10px;
+        }
+        
+    }
+    &__details{
+        width: 835px;
+        margin-left: 30px;
+        @include size(md){
+        
+          width: auto;
+          margin: 0;
+          margin-top: 10px;
+        
+          
+        }
+        &__header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 24px;
+            @include size(md){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+              
+            }
+            &__info{
+               
+                &__title{
+                    
+                    display: flex;
+                    flex-direction: row;
+                    padding-bottom: 7px;
+                    font: normal normal bold 22px/20px Montserrat;
+                    letter-spacing: 0px;
+                    color: #343A40;
+                   
+                    &__hotelname{
+                        margin-right: 16px;
+                    }
+                }
+                &__location{
+                    font: normal normal medium 16px/19px Montserrat;
+                    letter-spacing: 0px;
+                    color: #868E96;
+                }
+            }
+
+            &__rez{
+                @include size(md){
+                    margin-top: 10px;
+                }
+            }
+        }
+        &__img{
+            height: 30rem;
+            
+            margin-bottom: 24px;
+            img{
+                border-radius: 10px;
+                width: 835px;
+                height: 30rem;
+                @include size(md){
+                    height: 450px;
+                    object-fit: cover;
+                    width: 400px;
+                  }
+            }
+        }
+        &__content{
+            margin-bottom: 56px;
+            text-align: left;
+            font-family: $Montserrat;
+            font-size: 18px;
+            letter-spacing: 0px;
+            @include size(md){
+               text-align: center;
+               padding-left: 20px;
+               padding-right: 20px;
+              }
+        }
+
+
+    }
+}

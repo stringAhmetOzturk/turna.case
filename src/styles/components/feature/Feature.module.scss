@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+.features{
+            padding-top: 30px;    
+            height: 194px;
+            border-top: 1px solid  #E9ECEF;
+            &__header{
+                font: normal normal bold 22px/27px Montserrat;
+                letter-spacing: 0px;
+                color: #343A46;
+                margin-bottom: 24px;
+               }
+               &__list{
+                display: grid;
+                grid-template-columns: auto auto auto ;
+                padding: 10px;
+                &__item{
+                    text-align: left;
+                    display: flex;
+                    flex-direction: row;
+                    color: #343A40;
+                    font-family: $Montserrat;
+                    font-size: 16px;
+                    span{
+                        margin-right: 8px;
+                    }
+                }
+               }
+        }

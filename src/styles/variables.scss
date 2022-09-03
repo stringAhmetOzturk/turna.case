@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+$Montserrat : 'Montserrat', sans-serif;
+
+// :root {
+
+//    /* Colors: */
+//    --black: #00000000;
+//    --100: #262B39;
+//    --10: #F8F9FB;
+//    --05: #F9FAFC;
+//    --danger: #E83F2E;
+//    --secondary-color: #0273DC;
+//    --secondary-light: #F0F7FD;
+//    --tertiary-color: #FF8400;
+//    --80: #495057;
+//    --90: #2E3649;
+//    --white: #FFFFFF;
+//    --success: #66BB6A;
+//    --primary-light: #FFF4F4;
+//    --20: #F1F3F5;
+//    --30: #E9ECEF;
+//    --50: #CED4DA;
+//    --40: #DEE2E6;
+//    --dark: #343A46;
+//    --70: #868E96;
+//    --secondary: #5A667E;
+//    --light: #A2A8B6;
+//    --default: #45516D;
+//    --primary-color: #FF3200;
+//    --60: #ADB5BD;
+//    --unnamed-color-343a40: #343A40;
+   
+//    /* Font/text values */
+//    --unnamed-font-family-montserrat: Montserrat;
+//    --unnamed-font-style-normal: normal;
+//    --unnamed-font-weight-medium: medium;
+//    --unnamed-font-size-16: 16px;
+//    --unnamed-character-spacing-0: 0px;
+//    --unnamed-line-spacing-22: 22px;
+//    }
+   
+//    /* Character Styles */
+//    .large {
+//    font-family: var(--unnamed-font-family-montserrat);
+//    font-style: var(--unnamed-font-style-normal);
+//    font-weight: var(--unnamed-font-weight-medium);
+//    font-size: var(--unnamed-font-size-16);
+//    line-height: var(--unnamed-line-spacing-22);
+//    letter-spacing: var(--unnamed-character-spacing-0);
+//    color: var(--unnamed-color-343a40);
+//    }
+
+@mixin size($point) {
+    @if $point == md{
+         @media (max-width: 60em) {
+            @content;
+          
+         }
+    }
+    @if $point == sm{
+        @media (max-width: 48em) {
+           @content;
+      
+        }
+   }
+}

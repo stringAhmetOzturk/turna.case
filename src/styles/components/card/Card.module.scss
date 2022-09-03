@@ -1,0 +1,79 @@
+@import "../../variables.scss";
+
+.card{
+    border: 1px solid #DEE2E6;
+    border-radius: 6px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+    height: 342px;
+    display: flex;
+    flex-direction: row;
+    @include size(md){
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+       margin: 0;
+       padding: 0;
+       padding-top: 20px;
+       justify-content: center;
+       align-items: center;
+           
+      
+    }
+    &__img{
+        margin-right: 30px;
+      
+        img{
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            object-fit: cover;
+            height: 342px;
+            width: 300px;
+            @include size(md){
+                border-radius:6px;
+            }
+        }
+        @include size(md){
+            margin: 0;
+        }
+     
+    }
+    &__details{
+        margin-top: 30px;
+        &__header{
+            margin-bottom: 20px;
+            font: normal normal bold 22px/20px Montserrat;
+            letter-spacing: 0px;
+            color: #343A40;
+        }
+        &__featuresandprice{
+            display: flex;
+            flex-direction: row;
+            width: 480px;
+            justify-content: space-between;
+            &__features{
+                margin-bottom: 16px;
+               display: flex;
+               flex-direction: column;
+               &__item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+                &__icon{
+                    margin-right: 8px;
+                }
+               }
+            }
+            @include size(md){
+                padding: 20px;
+            }
+        }
+    
+      
+        &__book{
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+    }
+}

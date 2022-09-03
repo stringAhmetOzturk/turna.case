@@ -1,0 +1,155 @@
+@import "./../../variables.scss";
+
+.header{
+    background-color: #FFFFFF;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #E5EBEF;
+    
+    @include size(md){
+    padding: 20px;
+    justify-content: space-between;
+    transition: 1ms ease-out;
+    }
+
+    //header logo part
+    &__logo{
+        display: flex;
+        margin-right: 0;
+        align-items: center;
+        margin-right: 50px;
+        position: relative;
+         &__image{
+          
+            width: 10.5rem;
+            height: 1.5rem;
+         }
+    }
+    //header left menu part
+    &__menu{
+     
+       
+        margin-right: 16.5rem;
+        display: flex;
+        font-size: 0.875rem;   
+        align-items: center;
+    
+        
+            ul{
+                
+                display: flex;
+                padding: 0;
+                align-items: center;
+                list-style: none;
+                flex-direction: row;
+           
+                
+                li{
+                    display: block;
+                 
+                    text-decoration: none;
+                    padding:2rem 0.875rem ;
+                    &:hover{
+                        color: #FF3200;
+                        border-bottom: 3px solid #FF3200;
+                        cursor: pointer;
+                    }
+                }
+        }
+      
+        @include size(sm){
+           display: none;
+           transition: 1ms ease-out;
+        }
+      
+    }
+    //header right menu part
+    &__rightMenu{
+        font-size: 0.875rem;   
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        @include size(sm){
+            display: none;
+         }
+         @include size(md){
+            display: none;
+         }
+
+         &__flag{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 14px;
+            object-fit: contain;
+            img{
+                height: 34px;
+                width: 34px;
+                border-radius: 50%;
+            }
+         }
+         &__lira{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            height: 34px;
+            width: 34px;
+            border: 1px solid #393E43;
+            margin-right: 34px;
+         }
+         &__items{
+            display: flex;
+          
+           
+            ul{
+                padding: 0;
+            
+                display: flex;
+              
+                align-items: center;
+                
+                list-style: none;
+                
+                flex-direction: row;
+                
+                li{
+                    display: flex;
+                    align-items: center;
+                   
+                    text-decoration: none;
+                    padding-right: 1.25rem;
+                    &:nth-child(3){
+                        padding: 7px 14px;
+                        height: 32px;
+                        border: 1px solid #393E43;
+                        border-radius: 16px;
+                    }
+                    
+                }
+        }
+         }
+    }
+
+    &__toggle{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        @include size(sm){
+            display: flex;
+            align-items: center;
+            
+        }
+    
+        &__button{
+            width: 32px;
+            height: 32px;
+            color:#FF3200;
+            border: none;
+          
+        }
+    }
+}
